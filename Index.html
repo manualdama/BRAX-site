@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Comprar BRAX - Moeda Digital Soberana</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>BRAX</h1>
+  <p>A criptomoeda digital soberana, 1 BRAX = 1 USD</p>
+</header>
+
+<main>
+  <section class="buy-section">
+    <h2>Comprar BRAX</h2>
+
+    <label for="amount">Quantidade BRAX:</label>
+    <input type="number" id="amount" min="1" value="1" />
+
+    <p>Valor total em USD: <strong id="usdValue">1.00</strong></p>
+
+    <label for="paymentMethod">Método de pagamento:</label>
+    <select id="paymentMethod">
+      <option value="pix">Pix</option>
+      <option value="metamask">Carteira Ethereum (MetaMask)</option>
+      <option value="bitcoin">Bitcoin</option>
+      <option value="usdt">USDT (Tether)</option>
+    </select>
+
+    <button id="buyBtn">Comprar</button>
+
+    <div id="qrCodePix" class="qr-code"></div>
+  </section>
+
+  <section class="info-section">
+    <h2>Sobre BRAX</h2>
+    <p>BRAX é uma moeda digital revolucionária com segurança e estabilidade, criada para facilitar transações globais e proteger seu valor atrelado ao dólar.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Aldama Technologies</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+  </html>
